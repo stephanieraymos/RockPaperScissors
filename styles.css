@@ -19,3 +19,12 @@ body {
 .selection:hover {
     transform: scale(1.2);
 }
+
+.results {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns of equal size */
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+}
