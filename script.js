@@ -1,4 +1,4 @@
-const selectionButtons = document.querySelectorAll('[data-selection]')
+const selectionButton = document.querySelectorAll('[data-selection]')
 const SELECTIONS = [
     {
         name: 'rock',
@@ -19,11 +19,11 @@ const SELECTIONS = [
 
     }
 ]
-selectionButtons.forEach(selectionButtons => {
-    selectionButtons.addEventListener('click', e => {
-        const selectionName = selectionButtons.dataset.selection
-        const selection = SELECTIONS.find(selection.name === selectName)
-        makeSelection(selectionName)
+selectionButton.forEach(selectionButton => {
+    selectionButton.addEventListener('click', e => {
+        const selectionName = selectionButton.dataset.selection
+        const selection = SELECTIONS.find(selection => selection.name === selectionName)
+        makeSelection(selection)
     })
 })
 
